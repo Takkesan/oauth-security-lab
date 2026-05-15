@@ -11,7 +11,7 @@ Test app before hands-on
 * docker-compose
 * gcloud
 * java 26+
-* firebase cli 
+* firebase cli 15.15.0+
 
 ### Install
 
