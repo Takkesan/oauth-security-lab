@@ -7,8 +7,11 @@ Test app before hands-on
 ### Prerequisite
 
 * node.js 24
+* docker
+* docker-compose
 * gcloud
 * java 26+
+* firebase cli 
 
 ### Install
 
@@ -25,8 +28,12 @@ npm run build
 ### Run
 
 ```shell
-docker run -p 127.0.0.1:18080:8080 -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:26.6.1 start-dev
 npm run emulator & npm run dev
+```
+
+``` shell
+cd docker
+docker-compose up
 ```
 
 Open [http://localhost:8080](http://localhost:8080).
